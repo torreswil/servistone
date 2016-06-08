@@ -1,38 +1,50 @@
 
-
+$font1 : 'Yanone Kaffeesatz'
+$negativeColor : #FFFFFF
+$graygreen: #263239
 
 .srvs-hero-h
 	margin-top: 0px
 	width: 100%
-	background-color: #263239
+	background-color: $graygreen
 	min-height: 250px
 	padding-top: 60px
 	top: 0px
 	position: fixed
-	-webkit-transition: all 0.5s
-	transition: all 0.5s
+	-webkit-transition: all 0.3s
+	transition: all 0.3s
+
 	.srvs-logo
 		margin: 0 auto
 		width: 160px
-		-webkit-transition: all 0.5s
-		transition: all 0.5s
+		-webkit-transition: all 0.3s
+		transition: all 0.3s
 	h1
-		font-family: 'Yanone Kaffeesatz', sans-serif
+		font-family: $font1
 		text-align: center
 		font-weight: 200
-		color: #FFFFFF
+		color: $negativeColor
 		font-size: 48px
 		margin-top: -5px
-		-webkit-transition: all 0.5s
-		transition: all 0.5s
+		margin-bottom: 0px
+		-webkit-transition: all 0.3s
+		transition: all 0.3s
 
 	.st0
-		fill: #FFFFFF
-		stroke: #FFFFFF
+		fill: $negativeColor
+		stroke: $negativeColor
 		stroke-width: 0.8
 		stroke-miterlimit: 10
-		-webkit-transition: all 0.5s
-		transition: all 0.5s
+		-webkit-transition: all 0.3s
+		transition: all 0.3s
+	h2
+		margin-top: 0px
+		font-family: $font1
+		text-align: center
+		font-weight: 100
+		color: #8EEFB9
+		font-size: 1.5em
+
 
 .srvs-nav-h
 	width: 100%
@@ -63,6 +75,9 @@
 		stroke-width: 2.2
 		stroke-miterlimit: 10
 
+	h2
+		display: none
+
 .row-h
 	width: 100%
 	max-width: 1080px
@@ -74,5 +89,10 @@ a
 
 .content
 	padding-top: 350px
-	max-width: 1080px
+	max-width: 90%
 	margin: 0 auto
+	color: $graygreen
+
+
+.offer-img
+	width: 100%
