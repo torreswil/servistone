@@ -2,8 +2,8 @@
   margin-top: 0px;
   width: 100%;
   background-color: #263239;
-  min-height: 250px;
-  padding-top: 60px;
+  min-height: 300px;
+  padding-top: 46px;
   top: 0px;
   position: fixed;
   -webkit-transition: all 0.3s;
@@ -36,8 +36,44 @@
     text-align: center;
     font-weight: 100;
     color: #8EEFB9;
-    font-size: 1.5em; }
-
+    font-size: 1.2em; }
+  .srvs-hero-h .mouse {
+    display: block;
+    opacity: 1;
+    margin: 0 auto;
+    width: 26px;
+    height: 46px;
+    border-radius: 13px;
+    border: 1px solid #FFFFFF;
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -14px; }
+    .srvs-hero-h .mouse span {
+      display: block;
+      margin: 6px auto;
+      width: 1px;
+      height: 1px;
+      border-radius: 4px;
+      background: #8EEFB9;
+      border: 1px solid transparent;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: scroll;
+      animation-name: scroll; }
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px); } }
 .srvs-nav-h {
   width: 100%;
   background-color: #263239;
@@ -67,6 +103,9 @@
     stroke-miterlimit: 10; }
   .srvs-nav-h h2 {
     display: none; }
+  .srvs-nav-h .mouse {
+    opacity: 0;
+    bottom: -120px; }
 
 .row-h {
   width: 100%;
@@ -78,13 +117,37 @@
 a {
   text-decoration: none; }
 
-.content {
+.features {
   padding-top: 350px;
   max-width: 90%;
   margin: 0 auto;
-  color: #263239; }
+  color: #263239;
+  font-family: "Yanone Kaffeesatz"; }
+  .features h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 200; }
+    .features h2 strong {
+      color: #8EEFB9;
+      font-weight: 200; }
 
-.offer-img {
-  width: 100%; }
+.srvs-box {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .srvs-box .offer-img {
+    width: 100%;
+    margin: 0 auto;
+    display: block; }
+    @media only screen and (max-width: 1024px) {
+      .srvs-box .offer-img {
+        width: 140px; } }
+  @media only screen and (max-width: 1024px) {
+    .srvs-box h3 {
+      text-align: center; } }
+  .srvs-box p {
+    line-height: 130%; }
+    @media only screen and (max-width: 1024px) {
+      .srvs-box p {
+        text-align: center; } }
 
 /*# sourceMappingURL=srvs-styles.css.map */

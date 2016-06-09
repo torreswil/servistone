@@ -2,7 +2,7 @@
     
     // Sticky Header
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 120) {
+        if ($(window).scrollTop() > 50) {
             $(".srvs-hero-h").addClass('srvs-nav-h');
         } else {
             $(".srvs-hero-h").removeClass('srvs-nav-h');
