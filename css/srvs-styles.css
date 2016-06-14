@@ -1,3 +1,11 @@
+body {
+  font-family: "Yanone Kaffeesatz", sans-serif; }
+
+.wrap {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto; }
+
 .srvs-hero-h {
   margin-top: 0px;
   width: 100%;
@@ -14,7 +22,6 @@
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
   .srvs-hero-h h1 {
-    font-family: "Yanone Kaffeesatz";
     text-align: center;
     font-weight: 200;
     color: #FFFFFF;
@@ -32,10 +39,9 @@
     transition: all 0.3s; }
   .srvs-hero-h h2 {
     margin-top: 0px;
-    font-family: "Yanone Kaffeesatz";
     text-align: center;
     font-weight: 100;
-    color: #8EEFB9;
+    color: #71dabc;
     font-size: 1.2em; }
   .srvs-hero-h .mouse {
     display: block;
@@ -55,7 +61,7 @@
       width: 1px;
       height: 1px;
       border-radius: 4px;
-      background: #8EEFB9;
+      background: #71dabc;
       border: 1px solid transparent;
       -webkit-animation-duration: 1s;
       animation-duration: 1s;
@@ -109,27 +115,28 @@
 
 .row-h {
   width: 100%;
-  max-width: 1080px;
   margin: 0 auto;
-  position: relative;
-  padding: 0 2%; }
+  max-width: 1200px;
+  position: relative; }
 
 a {
   text-decoration: none; }
 
 .features {
   padding-top: 350px;
-  max-width: 90%;
+  padding-bottom: 50px;
   margin: 0 auto;
-  color: #263239;
-  font-family: "Yanone Kaffeesatz"; }
+  color: #263239; }
   .features h2 {
     text-align: center;
     font-size: 2em;
     font-weight: 200; }
     .features h2 strong {
-      color: #8EEFB9;
+      color: #71dabc;
       font-weight: 200; }
+    @media only screen and (max-width: 768px) {
+      .features h2 {
+        font-size: 1.6em; } }
 
 .srvs-box {
   margin-top: 20px;
@@ -149,5 +156,17 @@ a {
     @media only screen and (max-width: 1024px) {
       .srvs-box p {
         text-align: center; } }
+
+.services {
+  background-color: #71dabc; }
+  .services h3 {
+    font-weight: 100;
+    font-size: 2em;
+    color: #FFFFFF;
+    margin-bottom: 16px; }
+  .services p {
+    font-size: 1.4em;
+    font-weight: 200;
+    color: #FFFFFF; }
 
 /*# sourceMappingURL=srvs-styles.css.map */

@@ -1,8 +1,7 @@
 
-$font1 : 'Yanone Kaffeesatz'
 $negativeColor : #FFFFFF
 $graygreen: #263239
-$green: #8EEFB9
+$green: #71dabc
 
 
 =small
@@ -12,6 +11,14 @@ $green: #8EEFB9
 =medium
 	@media only screen and (max-width: 1024px)
 		@content
+
+body
+	font-family: 'Yanone Kaffeesatz', sans-serif
+
+.wrap 
+	box-sizing: border-box
+	max-width: 1200px
+	margin: 0 auto
 
 .srvs-hero-h
 	margin-top: 0px
@@ -30,7 +37,6 @@ $green: #8EEFB9
 		-webkit-transition: all 0.3s
 		transition: all 0.3s
 	h1
-		font-family: $font1
 		text-align: center
 		font-weight: 200
 		color: $negativeColor
@@ -49,7 +55,6 @@ $green: #8EEFB9
 		transition: all 0.3s
 	h2
 		margin-top: 0px
-		font-family: $font1
 		text-align: center
 		font-weight: 100
 		color: $green
@@ -134,19 +139,17 @@ $green: #8EEFB9
 
 .row-h
 	width: 100%
-	max-width: 1080px
 	margin: 0 auto
+	max-width: 1200px
 	position: relative
-	padding: 0 2%
 a
 	text-decoration: none
 
 .features
 	padding-top: 350px
-	max-width: 90%
+	padding-bottom: 50px
 	margin: 0 auto
 	color: $graygreen
-	font-family: $font1
 	h2
 		text-align: center
 		font-size: 2em
@@ -154,6 +157,8 @@ a
 		strong
 			color: $green
 			font-weight: 200
+		+small
+			font-size: 1.6em
 
 .srvs-box
 	margin-top: 20px
@@ -173,4 +178,19 @@ a
 		line-height: 130%
 		+medium
 			text-align: center
+
+
+.services
+	background-color: $green
+	h3
+		font-weight: 100
+		font-size: 2em
+		color: $negativeColor
+		margin-bottom: 16px
+
+	p
+		font-size: 1.4em
+		font-weight: 200
+		color: $negativeColor
+
 
