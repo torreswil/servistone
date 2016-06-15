@@ -1,7 +1,7 @@
 
 $negativeColor : #FFFFFF
 $graygreen: #263239
-$green: #71dabc
+$green: #1CBB9B
 
 
 =small
@@ -146,19 +146,20 @@ a
 	text-decoration: none
 
 .features
-	padding-top: 350px
+	padding-top: 340px
 	padding-bottom: 50px
 	margin: 0 auto
 	color: $graygreen
-	h2
-		text-align: center
-		font-size: 2em
+.center-title
+	text-align: center
+	font-size: 2em
+	font-weight: 200
+	margin-top: 40px
+	strong
+		color: $green
 		font-weight: 200
-		strong
-			color: $green
-			font-weight: 200
-		+small
-			font-size: 1.6em
+	+small
+		font-size: 1.6em
 
 .srvs-box
 	margin-top: 20px
@@ -176,21 +177,49 @@ a
 
 	p
 		line-height: 130%
+		font-size: 1.2em
 		+medium
 			text-align: center
 
 
-.services
+.init-project
+	padding-top: 30px
 	background-color: $green
+	padding-bottom: 15px
 	h3
 		font-weight: 100
 		font-size: 2em
 		color: $negativeColor
-		margin-bottom: 16px
+		margin-bottom: 0px
+		margin-top: 0px
 
 	p
+		margin-top: 0px
 		font-size: 1.4em
 		font-weight: 200
 		color: $negativeColor
 
 
+.btn
+	float: right
+	background: none
+	color: $negativeColor
+	font-size: 1.5em
+	font-weight: 200
+	border: 2px solid $negativeColor
+	display: inline-block
+	padding: 0 1.25em
+	line-height: 2.4
+	border-radius: 1.5em
+	transition: 0.4s
+	margin-top: 10px
+	+small
+		display: block
+		float: none
+		margin: 0 auto
+	&:hover
+		background-color: $negativeColor
+		color: $green
+
+.img-service
+	width: 50px

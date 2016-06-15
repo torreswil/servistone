@@ -41,7 +41,7 @@ body {
     margin-top: 0px;
     text-align: center;
     font-weight: 100;
-    color: #71dabc;
+    color: #1CBB9B;
     font-size: 1.2em; }
   .srvs-hero-h .mouse {
     display: block;
@@ -61,7 +61,7 @@ body {
       width: 1px;
       height: 1px;
       border-radius: 4px;
-      background: #71dabc;
+      background: #1CBB9B;
       border: 1px solid transparent;
       -webkit-animation-duration: 1s;
       animation-duration: 1s;
@@ -123,20 +123,22 @@ a {
   text-decoration: none; }
 
 .features {
-  padding-top: 350px;
+  padding-top: 340px;
   padding-bottom: 50px;
   margin: 0 auto;
   color: #263239; }
-  .features h2 {
-    text-align: center;
-    font-size: 2em;
+
+.center-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 200;
+  margin-top: 40px; }
+  .center-title strong {
+    color: #1CBB9B;
     font-weight: 200; }
-    .features h2 strong {
-      color: #71dabc;
-      font-weight: 200; }
-    @media only screen and (max-width: 768px) {
-      .features h2 {
-        font-size: 1.6em; } }
+  @media only screen and (max-width: 768px) {
+    .center-title {
+      font-size: 1.6em; } }
 
 .srvs-box {
   margin-top: 20px;
@@ -152,21 +154,51 @@ a {
     .srvs-box h3 {
       text-align: center; } }
   .srvs-box p {
-    line-height: 130%; }
+    line-height: 130%;
+    font-size: 1.2em; }
     @media only screen and (max-width: 1024px) {
       .srvs-box p {
         text-align: center; } }
 
-.services {
-  background-color: #71dabc; }
-  .services h3 {
+.init-project {
+  padding-top: 30px;
+  background-color: #1CBB9B;
+  padding-bottom: 15px; }
+  .init-project h3 {
     font-weight: 100;
     font-size: 2em;
     color: #FFFFFF;
-    margin-bottom: 16px; }
-  .services p {
+    margin-bottom: 0px;
+    margin-top: 0px; }
+  .init-project p {
+    margin-top: 0px;
     font-size: 1.4em;
     font-weight: 200;
     color: #FFFFFF; }
+
+.btn {
+  float: right;
+  background: none;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: 200;
+  border: 2px solid #FFFFFF;
+  display: inline-block;
+  padding: 0 1.25em;
+  line-height: 2.4;
+  border-radius: 1.5em;
+  transition: 0.4s;
+  margin-top: 10px; }
+  @media only screen and (max-width: 768px) {
+    .btn {
+      display: block;
+      float: none;
+      margin: 0 auto; } }
+  .btn:hover {
+    background-color: #FFFFFF;
+    color: #1CBB9B; }
+
+.img-service {
+  width: 50px; }
 
 /*# sourceMappingURL=srvs-styles.css.map */
