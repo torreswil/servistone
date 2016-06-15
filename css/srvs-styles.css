@@ -199,6 +199,8 @@ a {
     color: #1CBB9B; }
 
 .img-service {
-  width: 50px; }
+  width: 200px;
+  margin: 0 auto;
+  display: block; }
 
 /*# sourceMappingURL=srvs-styles.css.map */
