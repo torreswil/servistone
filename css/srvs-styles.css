@@ -131,41 +131,49 @@ a {
 
 .center-title {
   text-align: center;
-  font-size: 2em;
-  font-weight: 400;
+  font-size: 2.5em;
+  font-weight: 200;
   margin-top: 40px; }
   .center-title strong {
     color: #1CBB9B;
     font-weight: 200; }
   @media only screen and (max-width: 768px) {
     .center-title {
-      font-size: 1.6em; } }
+      font-size: 2em; } }
 
 .srvs-box {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px; }
   .srvs-box .offer-img {
-    width: 100%;
+    height: 80px;
     margin: 0 auto;
     display: block; }
+  .srvs-box h3 {
+    display: block;
+    font-weight: 200;
+    color: #1CBB9B;
+    text-align: center;
+    margin: 0px;
+    padding: 10px; }
     @media only screen and (max-width: 1024px) {
-      .srvs-box .offer-img {
-        width: 140px; } }
-  @media only screen and (max-width: 1024px) {
-    .srvs-box h3 {
-      text-align: center; } }
+      .srvs-box h3 {
+        text-align: center; } }
   .srvs-box p {
     line-height: 130%;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    margin-top: 0px;
+    text-align: center; }
     @media only screen and (max-width: 1024px) {
       .srvs-box p {
         text-align: center; } }
   .srvs-box h2 {
     font-weight: 200;
     color: #1CBB9B;
-    text-align: center; }
+    text-align: center;
+    margin: 0px;
+    padding: 10px; }
 
 .init-project {
   padding-top: 30px;
@@ -209,5 +217,11 @@ a {
   height: 100px;
   margin: 0 auto;
   display: block; }
+
+.chooseus {
+  color: #FFFFFF;
+  background-color: #263239; }
+  .chooseus p {
+    font-weight: 200; }
 
 /*# sourceMappingURL=srvs-styles.css.map */
