@@ -31,6 +31,33 @@
         }, 500);
         event.preventDefault();
     });
+
+    var carousel = $("#carousel-tech");
+
+    carousel.owlCarousel({
+        autoPlay:true,
+        itemsCustom : [
+            [0, 3],
+            [450, 4],
+            [600, 5],
+            [700, 6],
+            [1000, 8],
+            [1200, 9],
+            [1400, 12],
+            [1600, 14]
+        ],
+        navigation:false,
+        pagination:false
+    })
+
+      $("#next-btn").click(function(){
+        carousel.trigger('owl.next');
+      })
+      $("#prev-btn").click(function(){
+        carousel.trigger('owl.prev');
+    })
+
+
 })(jQuery);
 
 (function($){
