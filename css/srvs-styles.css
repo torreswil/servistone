@@ -7,7 +7,7 @@ a {
 
 .wrap {
   box-sizing: border-box;
-  max-width: 1024px;
+  max-width: 85%;
   margin: 0 auto; }
 
 .srvs-hero-h {
@@ -91,7 +91,8 @@ a {
   min-height: 50px;
   padding-bottom: 12px;
   padding-top: 0px;
-  top: 0px; }
+  top: 0px;
+  z-index: 999; }
   .srvs-nav-h .srvs-logo {
     width: 56px;
     float: left;
@@ -224,9 +225,16 @@ a {
 
 .chooseus {
   color: #FFFFFF;
-  background-color: #263239; }
+  background-color: #263239;
+  padding-top: 28px;
+  padding-bottom: 28px; }
   .chooseus p {
     font-weight: 200; }
+  .chooseus .logo-lg {
+    margin: 18px; }
+    @media only screen and (max-width: 768px) {
+      .chooseus .logo-lg {
+        display: none; } }
 
 .tech {
   width: 48px;
@@ -240,5 +248,46 @@ a {
 
 .layout {
   width: 100%; }
+
+.options-select {
+  display: block; }
+
+#filters li {
+  display: inline-block;
+  margin: 0 5px; }
+  #filters li a {
+    display: block;
+    background-color: #EEEEEE;
+    border-radius: 3px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 15px;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s; }
+    #filters li a:hover {
+      color: #FFFFFF;
+      text-decoration: none;
+      background-color: #1CBB9B; }
+    #filters li a.selected {
+      background-color: #1CBB9B;
+      color: #FFFFFF;
+      text-decoration: none; }
+
+.caso {
+  margin: 0;
+  line-height: 0;
+  width: 45%;
+  float: left;
+  padding: 0;
+  position: relative; }
+  .caso label {
+    color: #1CBB9B;
+    font-weight: 400; }
+  .caso img {
+    display: block;
+    height: 100px;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=srvs-styles.css.map */

@@ -23,7 +23,7 @@ a
 
 .wrap 
 	box-sizing: border-box
-	max-width: 1024px
+	max-width: 85%
 	margin: 0 auto
 
 .srvs-hero-h
@@ -114,6 +114,7 @@ a
 	padding-bottom: 12px
 	padding-top: 0px
 	top: 0px
+	z-index: 999
 	.srvs-logo
 		width: 56px
 		float: left
@@ -256,8 +257,14 @@ a
 .chooseus
 	color: $negativeColor
 	background-color: $graygreen
+	padding-top: 28px
+	padding-bottom: 28px
 	p
 		font-weight: 200
+	.logo-lg
+		margin: 18px
+		+small
+			display: none
 
 .tech
 	width: 48px
@@ -270,6 +277,53 @@ a
 		vertical-align: middle
 .layout
 	width: 100%
+
+.options-select
+	display: block
+
+#filters
+	li
+		display: inline-block
+		margin: 0 5px
+
+		a
+			display: block
+			background-color: #EEEEEE
+			border-radius: 3px
+			padding: 8px 15px
+			text-transform: uppercase
+			color: #222222
+			margin-bottom: 15px
+			transition: all 0.3s ease 0s
+			-moz-transition: all 0.3s ease 0s
+			-webkit-transition: all 0.3s ease 0s
+			&:hover
+				color: #FFFFFF
+				text-decoration: none
+				background-color: $green
+
+			&.selected
+				background-color: $green
+				color: #FFFFFF
+				text-decoration: none
+
+
+.caso
+	margin: 0
+	line-height: 0
+	width: 45%
+	float: left
+	padding: 0
+	position: relative
+	label
+		color: $green
+		font-weight: 400
+
+	img
+		display: block
+		height: 100px
+		margin: 0 auto
+
 
 
 
