@@ -18,13 +18,24 @@ body
 a
 	text-decoration: none
 
-
+		
 
 
 .wrap 
 	box-sizing: border-box
 	max-width: 85%
 	margin: 0 auto
+	+small
+		max-width: 	100%
+		padding-left: 0rem
+		padding-right: 0rem
+	+medium
+		max-width: 	95%
+		padding-left: 0rem
+		padding-right: 0rem
+
+
+				
 
 .srvs-hero-h
 	margin-top: 0px
@@ -119,6 +130,7 @@ a
 		width: 56px
 		float: left
 		margin-bottom: 0px
+		margin-left: 10px
 		bottom: 0px
 		right: 0px
 		padding-top: 10px
@@ -126,10 +138,10 @@ a
 		font-weight: 300
 		margin-bottom: 0px
 		margin-top: 0px
-		font-size: 34px
+		font-size: 28px
 		float: left
 		padding-left: 10px
-		padding-top: 10px
+		padding-top: 18px
 		bottom: 0px
 
 	.st0
@@ -172,8 +184,8 @@ a
 .srvs-box
 	margin-top: 20px
 	margin-bottom: 30px
-	padding-left: 15px
-	padding-right: 15px
+	padding-left: 20px
+	padding-right: 20px
 	.offer-img
 		height: 80px
 		margin: 0 auto
@@ -204,6 +216,11 @@ a
 		text-align: center
 		margin: 0px
 		padding: 10px
+
+		a
+			color: $green
+			text-decoration: none
+			font-weight: 400	
 
 
 
@@ -309,12 +326,21 @@ a
 
 
 .caso
-	margin: 0
-	line-height: 0
-	width: 45%
+	width: 500px
+	margin: 10px
 	float: left
 	padding: 0
 	position: relative
+	+small
+		width: 284px
+		float: left
+		padding: 0
+		position: relative
+	+medium
+		width: 320px
+		float: left
+		padding: 0
+		position: relative
 	label
 		color: $green
 		font-weight: 400
