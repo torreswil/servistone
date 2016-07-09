@@ -48,11 +48,16 @@ a
 	-webkit-transition: all 0.3s
 	transition: all 0.3s
 
+	.mobile-nav
+		display: none
+
 	.srvs-logo
 		margin: 0 auto
 		width: 160px
 		-webkit-transition: all 0.3s
 		transition: all 0.3s
+	.srvs-contact
+		display: none
 	h1
 		text-align: center
 		font-weight: 200
@@ -126,6 +131,8 @@ a
 	padding-top: 0px
 	top: 0px
 	z-index: 999
+	.mobile-nav
+		display: none
 	.srvs-logo
 		width: 56px
 		float: left
@@ -134,6 +141,43 @@ a
 		bottom: 0px
 		right: 0px
 		padding-top: 10px
+		+small
+			right: initial
+			margin: 0 auto
+			float: none
+	.srvs-contact
+
+		display: none
+		+small
+			display: inline
+			position: absolute
+			left: 12px
+			top: 19px
+			width: 42px
+			float: right
+	
+	.mobile-toggle
+		display: none
+		cursor: pointer
+		font-size: 20px
+		position: absolute
+		right: 12px
+		top: 22px
+		width: 30px
+		webkit-transition: all 200ms ease-in
+		moz-transition: all 200ms ease-in
+		transition: all 200ms ease-in
+		+small
+			display: block
+		span
+			width: 30px
+			height: 1px
+			margin-bottom: 8px
+			border-radius: 1000px
+			background: #1CBB9B
+			display: block
+
+
 	h1
 		font-weight: 300
 		margin-bottom: 0px
@@ -143,6 +187,9 @@ a
 		padding-left: 10px
 		padding-top: 18px
 		bottom: 0px
+		+small
+			display: none
+
 
 	.st0
 		stroke-width: 2.2
@@ -154,6 +201,31 @@ a
 	.mouse
 		opacity: 0
 		bottom: -120px
+
+
+.open-nav
+	max-height: 400px !important
+	padding-bottom: 0px
+	.mobile-nav
+		position: relative 
+		display: block
+		margin: 0 auto
+		ul
+			width: 100%
+			padding: 0
+			margin: 0
+			li
+				list-style: none
+				text-align: center
+				font-size: 2rem
+				color: $green
+				padding: 15px
+				border-bottom: 1px $negativeColor solid
+				a
+					color: $green
+	.mobile-toggle
+		transform: rotate(-90deg)
+		-webkit-transform: rotate(-90deg)
 
 
 .row-h
@@ -172,7 +244,7 @@ a
 	color: $graygreen
 .center-title
 	text-align: center
-	font-size: 2.5em
+	font-size: 2em
 	font-weight: 200
 	margin-top: 40px
 	strong
@@ -327,7 +399,6 @@ a
 
 .caso
 	width: 500px
-	margin: 10px
 	float: left
 	padding: 0
 	position: relative

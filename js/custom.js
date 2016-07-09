@@ -2,18 +2,10 @@
     
     // Sticky Header
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 100) {
-            $(".srvs-hero-h").addClass('srvs-nav-h');
-        } else {
-            $(".srvs-hero-h").removeClass('srvs-nav-h');
-        }
+        togleMenu();
     });
     $(window).load(function() {
-        if ($(window).scrollTop() > 100) {
-            $(".srvs-hero-h").addClass('srvs-nav-h');
-        } else {
-            $(".srvs-hero-h").removeClass('srvs-nav-h');
-        }
+        togleMenu();
     });
 
     // Mobile Navigation
@@ -31,7 +23,7 @@
     // Navigation Scroll - ljepo radi materem
     $('nav a').click(function(event) {
         var id = $(this).attr("href");
-        var offset = 70;
+        var offset = 62;
         var target = $(id).offset().top - offset;
         $('html, body').animate({
             scrollTop: target
@@ -108,6 +100,17 @@
         
         return false;
     });
+
+
+    function togleMenu() {
+        if ($(window).scrollTop() > 100) {
+            $(".srvs-hero-h").addClass('srvs-nav-h');
+        } else {
+            $(".srvs-hero-h").removeClass('srvs-nav-h');
+            $(".srvs-nav-h").removeClass('open-nav');
+            $(".srvs-hero-h").removeClass('open-nav');
+        }
+    }
 
 
 

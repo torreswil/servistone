@@ -30,11 +30,15 @@ a {
   position: fixed;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
+  .srvs-hero-h .mobile-nav {
+    display: none; }
   .srvs-hero-h .srvs-logo {
     margin: 0 auto;
     width: 160px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
+  .srvs-hero-h .srvs-contact {
+    display: none; }
   .srvs-hero-h h1 {
     text-align: center;
     font-weight: 200;
@@ -103,6 +107,8 @@ a {
   padding-top: 0px;
   top: 0px;
   z-index: 999; }
+  .srvs-nav-h .mobile-nav {
+    display: none; }
   .srvs-nav-h .srvs-logo {
     width: 56px;
     float: left;
@@ -111,6 +117,42 @@ a {
     bottom: 0px;
     right: 0px;
     padding-top: 10px; }
+    @media only screen and (max-width: 768px) {
+      .srvs-nav-h .srvs-logo {
+        right: initial;
+        margin: 0 auto;
+        float: none; } }
+  .srvs-nav-h .srvs-contact {
+    display: none; }
+    @media only screen and (max-width: 768px) {
+      .srvs-nav-h .srvs-contact {
+        display: inline;
+        position: absolute;
+        left: 12px;
+        top: 19px;
+        width: 42px;
+        float: right; } }
+  .srvs-nav-h .mobile-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 12px;
+    top: 22px;
+    width: 30px;
+    webkit-transition: all 200ms ease-in;
+    moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in; }
+    @media only screen and (max-width: 768px) {
+      .srvs-nav-h .mobile-toggle {
+        display: block; } }
+    .srvs-nav-h .mobile-toggle span {
+      width: 30px;
+      height: 1px;
+      margin-bottom: 8px;
+      border-radius: 1000px;
+      background: #1CBB9B;
+      display: block; }
   .srvs-nav-h h1 {
     font-weight: 300;
     margin-bottom: 0px;
@@ -120,6 +162,9 @@ a {
     padding-left: 10px;
     padding-top: 18px;
     bottom: 0px; }
+    @media only screen and (max-width: 768px) {
+      .srvs-nav-h h1 {
+        display: none; } }
   .srvs-nav-h .st0 {
     stroke-width: 2.2;
     stroke-miterlimit: 10; }
@@ -128,6 +173,30 @@ a {
   .srvs-nav-h .mouse {
     opacity: 0;
     bottom: -120px; }
+
+.open-nav {
+  max-height: 400px !important;
+  padding-bottom: 0px; }
+  .open-nav .mobile-nav {
+    position: relative;
+    display: block;
+    margin: 0 auto; }
+    .open-nav .mobile-nav ul {
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+      .open-nav .mobile-nav ul li {
+        list-style: none;
+        text-align: center;
+        font-size: 2rem;
+        color: #1CBB9B;
+        padding: 15px;
+        border-bottom: 1px #FFFFFF solid; }
+        .open-nav .mobile-nav ul li a {
+          color: #1CBB9B; }
+  .open-nav .mobile-toggle {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); }
 
 .row-h {
   width: 100%;
@@ -146,7 +215,7 @@ a {
 
 .center-title {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 200;
   margin-top: 40px; }
   .center-title strong {
@@ -292,7 +361,6 @@ a {
 
 .caso {
   width: 500px;
-  margin: 10px;
   float: left;
   padding: 0;
   position: relative; }
