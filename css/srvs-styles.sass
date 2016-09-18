@@ -19,7 +19,14 @@ a
 	text-decoration: none
 
 		
-
+.web-nav
+	display: block
+	ul
+		float:left
+		li
+			display: inline
+	+small
+		display: none
 
 .wrap 
 	box-sizing: border-box
@@ -47,17 +54,20 @@ a
 	position: fixed
 	-webkit-transition: all 0.3s
 	transition: all 0.3s
+	+small
+		padding-top: 0px
 
 	.mobile-nav
 		display: none
-
+	.web-nav
+		display: none
 	.srvs-logo
 		margin: 0 auto
 		width: 160px
 		-webkit-transition: all 0.3s
 		transition: all 0.3s
-	.srvs-contact
-		display: none
+		+small
+			padding-top: 46px
 	h1
 		text-align: center
 		font-weight: 200
@@ -94,6 +104,8 @@ a
 		position: absolute
 		left: 50%
 		margin-left: -14px
+		+small
+			display: none
 		span
 			display: block
 			margin: 6px auto
@@ -110,7 +122,6 @@ a
 			animation-iteration-count: infinite
 			-webkit-animation-name: scroll
 			animation-name: scroll
-
 
 	@keyframes scroll 
 		0%
@@ -131,8 +142,21 @@ a
 	padding-top: 0px
 	top: 0px
 	z-index: 999
-	.mobile-nav
-		display: none
+	.web-nav
+		display: block
+		margin-right: 10%
+		font-size: 1.2em
+		float: right
+		ul
+			margin-bottom: 10px
+		li
+			display: inline
+			margin-left: 12px
+		a
+			color: $negativeColor
+		+small
+			display: none
+
 	.srvs-logo
 		width: 56px
 		float: left
@@ -145,37 +169,7 @@ a
 			right: initial
 			margin: 0 auto
 			float: none
-	.srvs-contact
 
-		display: none
-		+small
-			display: inline
-			position: absolute
-			left: 12px
-			top: 19px
-			width: 42px
-			float: right
-	
-	.mobile-toggle
-		display: none
-		cursor: pointer
-		font-size: 20px
-		position: absolute
-		right: 12px
-		top: 22px
-		width: 30px
-		webkit-transition: all 200ms ease-in
-		moz-transition: all 200ms ease-in
-		transition: all 200ms ease-in
-		+small
-			display: block
-		span
-			width: 30px
-			height: 1px
-			margin-bottom: 8px
-			border-radius: 1000px
-			background: #1CBB9B
-			display: block
 
 
 	h1
@@ -202,10 +196,41 @@ a
 		opacity: 0
 		bottom: -120px
 
+.srvs-contact
+
+	display: none
+	+small
+		display: inline
+		position: absolute
+		left: 12px
+		top: 19px
+		width: 42px
+		float: right
+
+.mobile-toggle
+	display: none
+	cursor: pointer
+	font-size: 20px
+	position: absolute
+	right: 12px
+	top: 22px
+	width: 30px
+	webkit-transition: all 200ms ease-in
+	moz-transition: all 200ms ease-in
+	transition: all 200ms ease-in
+	+small
+		display: block
+	span
+		width: 30px
+		height: 1px
+		margin-bottom: 8px
+		border-radius: 1000px
+		background: #1CBB9B
+		display: block
 
 .open-nav
-	max-height: 400px !important
 	padding-bottom: 0px
+	max-height: 700px !important
 	.mobile-nav
 		position: relative 
 		display: block
@@ -226,6 +251,9 @@ a
 	.mobile-toggle
 		transform: rotate(-90deg)
 		-webkit-transform: rotate(-90deg)
+
+	.web-nav
+		display: none
 
 
 .row-h
@@ -328,6 +356,7 @@ a
 	border-radius: 1.5em
 	transition: 0.4s
 	margin-top: 10px
+	display: none
 	+small
 		display: block
 		float: none
@@ -354,6 +383,9 @@ a
 		margin: 18px
 		+small
 			display: none
+
+.technologies
+	padding-bottom: 20px
 
 .tech
 	width: 48px
@@ -421,6 +453,61 @@ a
 		height: 100px
 		margin: 0 auto
 
+.testimonials
+	background-color: $graygreen
+	padding: 60px 30px
+	margin: 0 auto
+	img
+		width: 135px
+		display: block
+		margin: 0 auto
+		border-radius: 50%
+		padding: 5px
+		border: 1px $green solid
 
+	blockquote
+		color: $negativeColor
+		position: relative
 
+		p
+			font-size: 	1.6rem
+			font-weight: 200
+			text-align: center
 
+			&:before
+				content: "\201C"
+		  
+				/*Font*/
+				font-family: Georgia, serif
+				font-size: 80px
+				font-weight: bold
+				color: $green
+		  
+				/*Positioning*/
+				position: absolute	
+				left: -45px
+				top: -15px
+
+			&:after
+				content: "\201D"
+
+				/*Font*/
+				font-family: Georgia, serif
+				font-size: 80px
+				font-weight: bold
+				color: $green
+		  
+				/*Positioning*/
+				position: absolute	
+				right:  -45px
+				bottom: -48px
+
+.gray-footer
+	background-color: #556763
+	height: 40px
+.footer
+	background-color: $graygreen
+	padding: 60px 30px
+	margin: 0 auto
+	color: $negativeColor
+	letter-spacing: 0.2em
